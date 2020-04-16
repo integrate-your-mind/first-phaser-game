@@ -26,8 +26,8 @@ const Tab1: React.FC = () => {
                         <IonTitle size="large">Tab 1</IonTitle>
                     </IonToolbar>
                 </IonHeader>
+                <div id="game-root"></div>
             </IonContent>
-            <div id="game-root"></div>
         </IonPage>
     );
 };
