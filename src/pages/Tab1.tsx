@@ -1,33 +1,22 @@
 import React from 'react';
 import Phaser from 'phaser';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonPage } from '@ionic/react';
 import MainScene from '../scenes/MainScene';
 import './Tab1.css';
 
+// eslint-disable-next-line
 const game = new Phaser.Game({
     parent: 'game-root',
+    width: 250,
+    height: 300,
     type: Phaser.AUTO,
-    width: 300,
-    height: 500,
     scene: [MainScene],
 });
 
 const Tab1: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
-                <IonToolbar>
-                    <IonTitle>Tab 1</IonTitle>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">Tab 1</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-                <div id="game-root"></div>
-            </IonContent>
+            <div id="game-root"></div>
         </IonPage>
     );
 };
